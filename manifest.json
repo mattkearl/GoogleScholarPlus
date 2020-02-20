@@ -10,7 +10,7 @@
     "content_scripts": [
         {
             "css": ["style.css", "agreement-popup.css"],
-            "js": ["jquery.min.js", "content.js", "style.js", "rating.js"],
+            "js": ["jquery.min.js", "content.js", "style.js", "rating.js", "survey.js", "agreement.js"],
             "matches": ["https://scholar.google.com/scholar*" ]
         }
     ],
