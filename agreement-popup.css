@@ -8,8 +8,8 @@
 	position: fixed!important;
   top: 40px;
   top: 10%!important;
-  right: 35%!important;
-  width: 30%!important;
+  right: 25%!important;
+  width: 50%!important;
   height: auto!important;
   padding: 10px 20px 30px 20px!important;
   align-items: center!important;
@@ -25,7 +25,7 @@
   cursor: pointer!important;
   font-size: 15px!important;
   padding: 10px 15px!important;
-  width: 48%!important;
+  width: 48%;
   margin-top: 20px!important;
 }
 
@@ -54,10 +54,10 @@ button .close { padding-bottom: 10px!important; }
 ::-webkit-scrollbar-thumb:hover { background: #555!important; }
 
 /* Agreement Buttons */
-.opt-out-button { background-color: transparent!important; color: #5d5d5d!important; float: right!important; }
-.opt-in-button { background-color: #0057e7!important; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15)!important; }
-.opt-out-button:hover { color: black!important; font-weight: bold!important; }
-.opt-in-button:hover { background-color: #1178e8!important; }
+.opt-out-button { background-color: transparent!important; color: #5d5d5d!important; float: right!important; border:#5d5d5d solid 1px !important;}
+.opt-in-button, .disablebutton { background-color: #0057e7!important; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15)!important; }
+.opt-out-button:hover { color: black!important; background-color: rgba(255,255,255,0.3) !important; }
+.opt-in-button:hover, .disablebutton:hover { background-color: #1178e8!important; }
 .close { height: auto!important; }
 
 @media only screen and (max-width: 975px) {
