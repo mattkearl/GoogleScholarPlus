@@ -1,0 +1,106 @@
+@font-face {
+    font-family: googleFont;
+    src: url("/Users/Kath/Desktop/gs testing/Product Sans Regular.ttf");
+}
+
+
+body {
+    font-family: googleFont;
+    box-sizing:border-box;
+    margin: 50px;
+}
+
+.active {
+    border: 2px solid #4d90fe;
+    background-color: #4d90fe;
+    padding: 7px 15px;
+    border-radius:5px;
+    color:white;
+    letter-spacing:1px;
+    margin:5px;
+}
+
+
+
+.active:after {
+    display: inline-block;
+    position:relative;
+    top:0px;
+    left: 10px;
+    background-color:#4d90fe;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: transparent url('sort-down-solid-white.svg') no-repeat; 
+}
+
+.dropdown {
+    border: 2px solid grey;
+    background-color: #f5f5f5;
+    padding: 7px 15px;
+    border-radius:5px;
+    color:grey;
+    letter-spacing:1px;
+    margin:5px;
+}
+
+.dropdown:after {
+    display: inline-block;
+    position:relative;
+    top:0px;
+    left: 10px;
+    background-color:#f5f5f5;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: transparent url('sort-down-solid-grey.svg') no-repeat; 
+}
+
+.synonyms, .options {
+    margin: 20px;
+    margin-bottom:50px;  
+}
+
+.applied {
+    border: 2px solid #4d90fe;
+    background-color: #4d90fe;
+    padding: 7px 15px;
+    border-radius:5px;
+    color:white;
+    letter-spacing:1px;
+    margin:5px;
+}
+
+.applied:after {
+    display: inline-block;
+    position:relative;
+    top:2px;
+    left: 10px;
+    background-color:#4d90fe;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: transparent url('plus-solid.svg') no-repeat; 
+}
+
+.deleted {
+    border: 2px solid grey;
+    background-color: #f5f5f5;
+    padding: 7px 15px;
+    border-radius:5px;
+    color:grey;
+    letter-spacing:1px;
+    margin:5px;
+}
+
+.deleted:after {
+    display: inline-block;
+    position:relative;
+    top:1px;
+    left: 10px;
+    background-color:#f5f5f5;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: transparent url('times-solid.svg') no-repeat; 
+}

@@ -1,0 +1,71 @@
+#gs_ab { z-index: 0!important; }
+.gs_ggs { z-index: 0!important; }
+
+.consent-popup { display: none }
+
+.consent-popup {
+  z-index: 1!important;
+	position: fixed!important;
+  top: 40px;
+  top: 10%!important;
+  right: 35%!important;
+  width: 30%!important;
+  height: auto!important;
+  padding: 10px 20px 30px 20px!important;
+  align-items: center!important;
+  background-color: #f1f1f1!important;
+  border-radius: 5px!important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px!important;
+}
+
+.close {
+  border: none!important;
+  color: white!important;
+  border-radius: 2px!important;
+  cursor: pointer!important;
+  font-size: 15px!important;
+  padding: 10px 15px!important;
+  width: 48%!important;
+  margin-top: 20px!important;
+}
+
+button .close { padding-bottom: 10px!important; }
+
+.consent-popup h3 { padding-top: 15px; }
+
+.agreementLink { color: #0057e7!important; text-decoration: none!important; }
+.agreementButton { color: #0057e7!important; margin-bottom: 0px!important; }
+.agreementButton:hover { color: #1178e8!important; cursor: pointer!important; }
+.agreement-p-text { line-height: 1.6!important; }
+
+/* Agreement Text Box */
+.agreement-text-box {
+  overflow: auto!important;
+  height: 150px!important;
+  background-color: #fbfbfb!important;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1)!important;
+}
+
+.agreement-text { font-size: 11px!important; padding: 0px 10px!important; }
+
+::-webkit-scrollbar { width: 10px!important; }
+::-webkit-scrollbar-track { background: #f5f5f5!important; }
+::-webkit-scrollbar-thumb { background: #888!important; height: 50px!important; }
+::-webkit-scrollbar-thumb:hover { background: #555!important; }
+
+/* Agreement Buttons */
+.opt-out-button { background-color: transparent!important; color: #5d5d5d!important; float: right!important; }
+.opt-in-button { background-color: #0057e7!important; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15)!important; }
+.opt-out-button:hover { color: black!important; font-weight: bold!important; }
+.opt-in-button:hover { background-color: #1178e8!important; }
+.close { height: auto!important; }
+
+@media only screen and (max-width: 975px) {
+  .consent-popup { right: 30%!important; width: 40%!important; }
+}
+
+@media only screen and (max-width: 800px) {
+  .consent-popup { right: 25%!important; width: 50%!important; }
+  .close { width: 100%!important; }
+  .opt-out-button { float: none!important; margin-top: 0px!important; }
+}
