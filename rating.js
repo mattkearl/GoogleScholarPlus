@@ -101,27 +101,15 @@ function SetLinkOrder () {
 }
 
 
-/*
-
- $(function(){
-        $(".gs_or")
-
-    });
-*/
-
-
 
 //Cycle through each search result and Place stars
-const AddRater = document.querySelectorAll(".gs_or");
-for (var i = 0; i < AddRater.length; i++) {
+const AddRater = document.querySelectorAll(".gs_or"); // Look at all items on the page.
+for (var i = 0; i < AddRater.length; i++) { // For each one do the following.
 
-
-
-    var Relevance = document.createElement("div");
-    Relevance.innerHTML = "Relevance: ";
-
-    AddRater[i].appendChild(Relevance);
-
+    var Relevance = document.createElement("div"); // Place a div at the top
+    //Relevance.setAttribute("class", "relevanceIndicator");
+    //AddRater[i].appendChild(Relevance); // At the top of each result, add the div.
+    //AddRater[i].getElementsByClassName('relevanceIndicator')[0].appendChild("div");
 
     var that = this;
     for (var ii = 1; ii <= 3; ii++) {
