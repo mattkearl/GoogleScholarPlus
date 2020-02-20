@@ -101,20 +101,34 @@ function SetLinkOrder () {
 }
 
 
+/*
+
+ $(function(){
+        $(".gs_or")
+
+    });
+*/
+
+
+
 //Cycle through each search result and Place stars
 const AddRater = document.querySelectorAll(".gs_or");
 for (var i = 0; i < AddRater.length; i++) {
+
+
+
     var Relevance = document.createElement("div");
     Relevance.innerHTML = "Relevance: ";
+
     AddRater[i].appendChild(Relevance);
-    //AddRater[i].appendChild(RateDesc);
+
+
     var that = this;
     for (var ii = 1; ii <= 3; ii++) {
         var star = document.createElement("div");
         var rateblock = parseInt(i) + parseInt(medlink);
         var tempname = "star" + ii + 0 + rateblock;
         star.innerHTML = '<i class="fas fa-star"></i>';
-        //star.classname = "StarButton";
         star.setAttribute("class", "StarButton");
         star.setAttribute("id", tempname);
         AddRater[i].appendChild(star);
