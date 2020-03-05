@@ -190,12 +190,6 @@ label {
     color: #454545;
 }
 
-label {
-    display:flex!important;
-    flex-direction: row-reverse!important;
-    justify-content: flex-end!important;
-}
-
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
@@ -351,26 +345,40 @@ button#createQueryList.originalTerm:after {
 
 /* Rating System CSS */
 
-.StarButton {
-    display: inline-block;
-    margin: 3px;
+form#stars label {
+    display: inline-block !important;
+    padding: 3px;
     font-size: 120%;
     cursor: pointer;
     color: grey;
 }
 
-
-.SuperStarButton {
-    display: inline-block;
-    margin: 3px;
-    font-size: 120%;
-    cursor: pointer;
-    color: gold;
+form#stars input[type=checkbox] {
+    display: none;
 }
 
+form#stars label ~ span:after {
+ content: " Relevancy"; color:#ccc;
+}
 
+form#stars label:nth-of-type(1):hover ~ span:after {
+ content: " Irrelevant"; color:grey;
+}
 
+form#stars label:nth-of-type(2):hover ~ span:after {
+ content: " Relevant"; color:grey;
+}
 
+form#stars label:nth-of-type(3):hover ~ span:after {
+ content: " Very Relevant"; color:grey;
+}
+
+form#stars:hover label, form#stars input[type=checkbox]:checked + label {color:gold;}
+
+form#stars label:hover ~ label:nth-of-type(n) {
+ color:grey;
+
+}
 
 
 
