@@ -83,17 +83,6 @@ function setStage() {
                            "</form>"); // Add stars to each result
 
 
-
-
-
-
-
-            $(this).find(".fa-star").click(function(){
-               //alert("click");
-            });
-
-
-
         }); // Ends the each loop on all results
     }); // Ends jQuery code on setStage
 } // Ends setStage() function
