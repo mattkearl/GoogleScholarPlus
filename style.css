@@ -353,24 +353,14 @@ span.stars label {
     color: grey;
 }
 
-span.stars input[type=radio] {
-    display: none;
-}
+span.stars input[type=radio] { display: none; }
 
-span.stars label ~ span:after {
- content: " Rate Article Relevancy"; color:#ccc;
-}
-
-span.stars {
-    display:flex;
-}
-
+span.stars label ~ span:after { content: " Rate Article Relevancy"; color:#ccc; }
+span.stars { display:flex; }
 span.stars>label:before {
   color: #ccc;
   cursor: pointer;
 }
-
-
 
 span.stars>label:nth-of-type(1) {order:3;}
 span.stars>label:nth-of-type(2) {order:2;}
@@ -384,9 +374,7 @@ span.stars>input:checked ~ label:before
 
 
 span.stars label:nth-of-type(1):hover ~ span:after, span.stars input:nth-of-type(1):checked ~ span:after { content: " Very Relevant"; }
-
 span.stars label:nth-of-type(2):hover ~ span:after, span.stars input:nth-of-type(2):checked ~ span:after { content: " Relevant"; }
-
 span.stars label:nth-of-type(3):hover ~ span:after, span.stars input:nth-of-type(3):checked ~ span:after { content: " Irrelevant"; }
 
 
