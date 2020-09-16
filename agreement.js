@@ -1,8 +1,10 @@
-/* 20th:10:30 - 11:45am
-        2:21 - 3:45pm
-    3rd: 10:30 - 11:55am
-    5th: 10:10am - 11:55am
-
+/* Feb 20th:10:30 - 11:45am
+            2:21 - 3:45pm
+   Feb 3rd: 10:30 - 11:55am
+   Mar 5th: 10:10am - 11:55am
+   June 15th: 9am - 11:45am
+   
+   
 */
 
 // User Agreement Popup Content
